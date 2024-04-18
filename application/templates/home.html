@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+{% extends "base/index.html" %}
+{% load static %}
+{% block style %}  <link rel="stylesheet" href="{% static 'css/new.css' %}">  {% endblock %}
+
+{% block content %}
+  
+    <!--bootstrap-->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'branddd.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        
+        <div class="carousel-item">
+          <img src="{% static 'hejhejjj.webp' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'salee.jpeg' %}" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <hr>
+    <img src="{% static 'images/modelman.jpg' %}" class="rounded float-start" alt="...">
+<img src="{% static 'images/modelefemer.jpg' %}" class="rounded float-end" alt="...">
+
+   
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">MAN</h5>
+            <p class="card-text">T-SHIRT ACCESORIES SHOES PERFUM</p>
+            <a href="#" class="btn btn-dark">SEARCH</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">WOMAN</h5>
+            <p class="card-text">T-SHIRT ACCESORIES SHOES PERFUM</p>
+            <a href="#" class="btn btn-dark">SEARCH</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <h1><div class="KERKO">
+      <button class="btn btn-dark dropdown-toggle" type="button"
+      id="dropdownMenuButton1" data-bs-toggle="dropdown" ariaexpanded="false">
+      SEARCH
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="#img">BLUZE</a></li>
+      <li><a class="dropdown-item" href="#mini">ATLETE</a></li>
+      <li><a class="dropdown-item" href="#sele">PARFUM</a></li>
+      <li><a class="dropdown-item" href="lenci">GUCCI</a></li>
+      </ul>
+      </div>
+      <hr>
+      <button type="button" class="btn btn-light position-relative">
+        Inbox
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          99+
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </button>
+      <button type="button" class="btn btn-light position-relative">
+        Profile
+        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+          <span class="visually-hidden">New alerts</span>
+        </span>
+      </button>
+      <button type="button" class="btn btn-light position-relative">
+        Notifications <span class="badge text-bg-danger">4</span>
+      </button>
+
+     
+      
+    </h1>
+    
+    <hr>
+    <div class="container-fluid">
+      
+      <div class="row">
+        {% for product in products %}
+        <div class="col-12 col-md-3 col-lg-2">
+          <div class="card">
+          
+            <img src="{{product.product_image.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">{{product.product_price}}</h5>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+   
+   
+      <hr>
+     
+   <img src="{% static 'images/gglases.web' %} p" class="rounded float-start" id="po" alt="...">
+   <img src="{% static 'images/glases.jpg%' %}" class="rounded float-end" id="po" alt="...">
+   <img src="{% static 'images/syyyz.jpg% '}" class="rounded float-start" id="po" alt="...">
+<img src="{% static 'images/syzee.jpg' %}" class="rounded float-end" id="po" alt="...">
+
+  
+<p class="text-center">Cdo model shoqerohet me 1 falas per femij.</p>
+<p class="text-center">Optike/Dielli</p>
+
+<p class="text-center">Ofrojm mundesi blerje me keste.</p>
+<p class="text-center">Vizit optike falas.</p>
+<p class="text-center">Kthim ose ndrrim.</p>
+<p class="text-center">Servis ne raste problemi.</p>
+<p class="text-center">Faleminderit.</p>
+     
+
+     
+    
+        <hr>
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <img src="{% static 'images/parfume.jpg' %}" id="mini" onclick="Images()" alt="...">
+          </div>
+          
+       
+          <div class="flex-grow-1 ms-3"><div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+            Parfume te gjitha firmat me te njohura. <br>
+            Ulje mbi 50% ne te gjitha produktet. <br>
+            NJOFTIM: Produktet me ulje nuk kthehen/ndrrohen. <br>
+            
+          </div>
+           
+          
+        </div>
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <img src="{% static 'images/aksesor.jpeg' %}"  id="sele" onclick="Img()" alt="...">
+          </div>
+          
+       
+          <div class="flex-grow-1 ms-3"><div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3"> 
+            Aksesor te ndryshem dhe unik. 
+            Ulje mbi 70% ne te gjitha produktet. <br>
+            NJOFTIM: Produktet me ulje nuk kthehen/ndrrohen. <br>
+            Sasia e limituar. <br>
+          </div>
+        <hr>
+       
+          <hr>
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/parfume.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">SHOP NOW</h5>
+            <p class="card-text">Nese blini me shume se 1 produkt tjetrin e perfitoni falas.</p>
+            <a href="selman" class="btn btn-primary">SHOP</a>
+            </div>
+            </div>
+            <hr>
+            
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="{% static 'images/guccooo.webp' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'images/tomi2.jpg' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'images/thebest.jpg' %}" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <p>NEW GUCCI</p>
+         
+            <hr>
+            <img src="{% static 'images/bluzdior2.avif% '}" class="object-fit-cover border rounded" alt="...">
+            <img src="{% static 'images/bluzelyle2.webp% '}" class="object-fit-cover border rounded" alt="...">
+            <img src="{% static 'images/bluzdior2.avif' %}" class="object-fit-cover border rounded" alt="...">
+            <hr>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>OFERTA DHE ULJE</strong>KERKO POSHT. 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Nuk bejme ndrrime dhe kthim pas. </strong>Per cdo ngatrres do te ju japim zgjidhje mbrenda 12 oresh.<code>.accordion-body</code>FALEMENDERIT.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong>FALEMENDERIT
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+           
+            
+
+        
+        
+            {% endblock %}
+        

@@ -1,0 +1,59 @@
+* { 
+    margin: 0;
+    padding: 0;
+    background-image: image("icon.png");
+}
+body {
+    line-height: 1.5;
+    font-size: iron;
+    background-image:url(backgroundprojekt.webp) ;
+    
+background-image:
+}
+.backcolor{
+    background-color: rgb(1, 7, 5);
+}
+h1{
+    text-align: center;
+    
+    
+}
+img{
+    width: 200px;
+    height: 150px;
+}
+p{
+ color: red;
+ text-indent: 4.5%;
+}
+s{
+    color: red;
+}
+form {
+    text-align: center;
+    color: rgb(88, 83, 3);
+    font-weight: 400;
+    
+}
+#carouselExample {
+    
+    object-fit: cover;
+width: 800px;
+height: 200px;
+    
+}
+
+
+#carouselExampleCaptions{
+    
+    object-fit: cover;
+    width: 800px;
+    font-display:calc(50);
+
+}
+#btnbtn-dark{
+    margin:5% ;
+ }
+ #po{
+    height: 250px;
+ }
