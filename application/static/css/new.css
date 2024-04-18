@@ -1,12 +1,12 @@
 * { 
     margin: 0;
     padding: 0;
-    background-image: image("icon.png");
+    
 }
 body {
     line-height: 1.5;
     font-size: iron;
-    background-image:url(backgroundprojekt.webp) ;
+    background-image:url('backgroundprojekt.webp') ;
     
 background-image:
 }
