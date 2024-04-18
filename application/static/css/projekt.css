@@ -1,14 +1,13 @@
 * { 
     margin: 0;
     padding: 0;
-    background-image: image("icon.png");
+    
 }
 body {
     line-height: 1.5;
     font-size: iron;
-    background-image:url(backgroundprojekt.webp) ;
-    
-background-image:
+    background-image:url(../images/backgroundprojekt.webp);
+    background-color: rgb(1, 7, 5);
 }
 .backcolor{
     background-color: rgb(1, 7, 5);

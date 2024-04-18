@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {% extends "base/index.html" %}
 {% load static %}
-{% block style %}  <link rel="stylesheet" href="{% static 'css/new.css' %}">  {% endblock %}
+{% block style %}  <link rel="stylesheet" href="{% static 'css/projekt.css' %}">  {% endblock %}
 
 {% block content %}
   
@@ -9,14 +9,14 @@
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="{% static 'branddd.jpg' %}" class="d-block w-100" alt="...">
+          <img src="{% static 'images/branddd.jpg' %}" class="d-block w-100" alt="...">
         </div>
         
         <div class="carousel-item">
-          <img src="{% static 'hejhejjj.webp' %}" class="d-block w-100" alt="...">
+          <img src="{% static 'images/hejhejjj.webp' %}" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="{% static 'salee.jpeg' %}" class="d-block w-100" alt="...">
+          <img src="{% static 'images/salee.jpeg' %}" class="d-block w-100" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -96,7 +96,6 @@
         {% for product in products %}
         <div class="col-12 col-md-3 col-lg-2">
           <div class="card">
-          
             <img src="{{product.product_image.url}}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title text-center">{{product.product_price}}</h5>
@@ -110,10 +109,10 @@
    
       <hr>
      
-   <img src="{% static 'images/gglases.web' %} p" class="rounded float-start" id="po" alt="...">
-   <img src="{% static 'images/glases.jpg%' %}" class="rounded float-end" id="po" alt="...">
-   <img src="{% static 'images/syyyz.jpg% '}" class="rounded float-start" id="po" alt="...">
-<img src="{% static 'images/syzee.jpg' %}" class="rounded float-end" id="po" alt="...">
+   <img src="{% static 'images/gglases.webp'%}" class="rounded float-start" id="po" alt="...">
+   <img src="{% static 'images/glases.jpg'%}" class="rounded float-end" id="po" alt="...">
+   <img src="{% static 'images/syyyz.jpg'%}" class="rounded float-start" id="po" alt="...">
+<img src="{% static 'images/syzee.jpg'%}" class="rounded float-end" id="po" alt="...">
 
   
 <p class="text-center">Cdo model shoqerohet me 1 falas per femij.</p>
